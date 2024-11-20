@@ -9,7 +9,7 @@ export default function Test() {
 
   return (
     <div>
-      <h1 className="mt-[100rem]">Test</h1>
+      <h1 className="">Test</h1>
     </div>
   );
 }

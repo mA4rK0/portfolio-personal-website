@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Test from "../components/Tes";
 import NavbarLayout from "../layouts/Navbar_Layout";
+import HomeLayout from "../layouts/HomeLayout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <NavbarLayout client:only="react" />
-  <Test client:only="react" />
+  <HomeLayout />
 </Layout>

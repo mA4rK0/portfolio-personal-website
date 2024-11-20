@@ -8,7 +8,7 @@ export default function NavbarLayout() {
     console.log("Component mounted");
     const handleScroll = () => {
       console.log("Scrolling...");
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -18,7 +18,7 @@ export default function NavbarLayout() {
   }, []);
 
   return (
-    <section className={`flex items-center fixed top-0 w-full h-[3.688rem] ${scrolled ? "bg-defaultBlack" : ""}`}>
+    <section className={`flex items-center fixed top-0 w-full h-[3.688rem] ${scrolled ? "bg-defaultBlack" : "bg-transparent"}`}>
       <p className="text-white font-bold pl-[7.563rem]">
         M<span className="text-lightBlue">rC</span>
       </p>
