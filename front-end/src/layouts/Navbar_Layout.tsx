@@ -16,7 +16,7 @@ export default function NavbarLayout() {
   }, []);
 
   return (
-    <section className={`flex items-center fixed top-0 w-full h-[3.688rem] transition ease-in-out duration-300 ${scrolled ? "bg-defaultBlack" : "bg-transparent"}`}>
+    <section className={`flex items-center fixed top-0 w-full h-[3.688rem] z-20 transition ease-in-out duration-300 ${scrolled ? "bg-defaultBlack" : "bg-transparent"}`}>
       <p className="text-white font-bold pl-[7.563rem]">
         M<span className="text-lightBlue">rC</span>
       </p>

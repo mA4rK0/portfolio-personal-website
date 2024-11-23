@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <section className="flex text-white pl-[31.313rem] gap-x-[5.188rem]">
+    <section className="flex text-white pl-[38.813rem] gap-x-[5.188rem]">
       <a href="#home">
         <p className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">Home</p>
       </a>
@@ -15,9 +15,6 @@ export default function Navbar() {
       </a>
       <a href="#contact">
         <p className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">Contact</p>
-      </a>
-      <a href="#signin">
-        <p className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">Sign In</p>
       </a>
     </section>
   );
