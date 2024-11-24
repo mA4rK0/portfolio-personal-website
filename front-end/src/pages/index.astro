@@ -3,10 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import NavbarLayout from "../layouts/Navbar_Layout";
 import HomeLayout from "../layouts/HomeLayout.astro";
 import PortfolioLayout from "../layouts/PortfolioLayout.astro";
+import AboutLayout from "../layouts/AboutLayout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <NavbarLayout client:only="react" />
   <HomeLayout />
   <PortfolioLayout />
+  <AboutLayout />
 </Layout>

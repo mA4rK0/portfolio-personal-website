@@ -1,20 +1,20 @@
 export default function Navbar() {
   return (
-    <section className="flex text-white pl-[38.813rem] gap-x-[5.188rem]">
-      <a href="#home">
-        <p className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">Home</p>
+    <section className="flex text-white pl-[38.813rem] gap-[5.188rem]">
+      <a href="#home" className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">
+        Home
       </a>
-      <a href="#portfolio">
-        <p className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">Portfolio</p>
+      <a href="#portfolio" className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">
+        Portfolio
       </a>
-      <a href="#about">
-        <p className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">About</p>
+      <a href="#about" className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">
+        About
       </a>
-      <a href="#skill">
-        <p className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">Skill</p>
+      <a href="#skill" className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">
+        Skill
       </a>
-      <a href="#contact">
-        <p className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">Contact</p>
+      <a href="#contact" className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">
+        Contact
       </a>
     </section>
   );

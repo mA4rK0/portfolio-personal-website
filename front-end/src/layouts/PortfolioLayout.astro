@@ -1,13 +1,27 @@
 ---
-import Carousel from "../components/Carousel.astro";
+import ProjectCarousel from "../components/Carousel";
+import miniProjects from "../collection/miniProjects.json";
+import websites from "../collection/websites.json";
+
+interface Project {
+  name: string;
+  description: string;
+  image: string;
+  alt: string;
+  url: string;
+}
+
+const mProjects: Project[] = miniProjects;
+const websitesProjects: Project[] = websites;
 ---
 
-<section class="bg-navyBlue">
+<section class="bg-navyBlue min-h-[50.625rem] pb-[4.02rem]">
   <section class="flex flex-col">
-    <section class="flex flex-col items-center my-[4.02rem] gap-y-3">
+    <section class="flex flex-col items-center mt-[4.02rem] gap-y-3">
       <h1 id="portfolio" class="text-lightBlue font-bold text-4xl">Portfolio</h1>
       <p>here are my latest projects</p>
     </section>
-    <Carousel />
+    <ProjectCarousel client:idle title="Websites" projects={websitesProjects} />
+    <ProjectCarousel client:idle title="Mini Projects" projects={mProjects} />
   </section>
 </section>
