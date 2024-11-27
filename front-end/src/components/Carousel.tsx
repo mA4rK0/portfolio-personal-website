@@ -22,7 +22,7 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
         {projects.map((project: Project) => (
           <div className="carousel-item mx-4" key={project.id}>
             <a href={project.url} target="_blank" rel="noopener noreferrer">
-              <div className="card bg-base-100 w-96 shadow-xl">
+              <div className="card bg-base-100 w-96 shadow-xl hover:shadow-lightBlue transition ease-in-out duration-300">
                 <figure>
                   <Img src={project.image} alt={project.alt} width={400} height={400} />
                 </figure>

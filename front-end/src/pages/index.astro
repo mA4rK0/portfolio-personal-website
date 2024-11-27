@@ -5,12 +5,14 @@ import HomeLayout from "../layouts/HomeLayout.astro";
 import PortfolioLayout from "../layouts/PortfolioLayout.astro";
 import AboutLayout from "../layouts/AboutLayout.astro";
 import SkillLayout from "../layouts/SkillLayout.astro";
+import ContactLayout from "../layouts/ContactLayout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Juan Website">
   <NavbarLayout client:only="react" />
   <HomeLayout />
   <PortfolioLayout />
   <AboutLayout />
   <SkillLayout />
+  <ContactLayout />
 </Layout>

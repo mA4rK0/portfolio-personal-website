@@ -6,5 +6,13 @@
     "image": "/src/assets/weather-app.jpg",
     "alt": "Weather App",
     "url": "https://portfolio-weather-app-v1.vercel.app/"
+  },
+  {
+    "id": 2,
+    "name": "Pomodoro App",
+    "description": "A simple Pomodoro App",
+    "image": "/src/assets/weather-app.jpg",
+    "alt": "Pomodoro App",
+    "url": "https://ma4rk0.github.io/portfolio-Pomodoro-Timer_v1/"
   }
 ]
