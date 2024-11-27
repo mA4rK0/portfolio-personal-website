@@ -4,6 +4,7 @@ import miniProjects from "../collection/miniProjects.json";
 import websites from "../collection/websites.json";
 
 interface Project {
+  id: number;
   name: string;
   description: string;
   image: string;
@@ -15,9 +16,9 @@ const mProjects: Project[] = miniProjects;
 const websitesProjects: Project[] = websites;
 ---
 
-<section class="bg-navyBlue min-h-[50.625rem] pb-[4.02rem]">
+<section id="portfolio" class="bg-navyBlue min-h-[50.625rem] py-[4.02rem]">
   <section class="flex flex-col">
-    <section class="flex flex-col items-center mt-[4.02rem] gap-y-3">
+    <section class="flex flex-col items-center gap-y-3">
       <h1 id="portfolio" class="text-lightBlue font-bold text-4xl">Portfolio</h1>
       <p>here are my latest projects</p>
     </section>

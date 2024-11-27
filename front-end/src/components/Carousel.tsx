@@ -1,6 +1,7 @@
 import { Img } from "react-image";
 
 interface Project {
+  id: number;
   name: string;
   description: string;
   image: string;
@@ -19,7 +20,7 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
       <h2 className="text-lightBlue text-2xl font-bold mx-auto my-11">{title}</h2>
       <div className="carousel carousel-center rounded-box max-w-[81.5rem] mx-auto">
         {projects.map((project: Project) => (
-          <div className="carousel-item mx-4">
+          <div className="carousel-item mx-4" key={project.id}>
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               <div className="card bg-base-100 w-96 shadow-xl">
                 <figure>

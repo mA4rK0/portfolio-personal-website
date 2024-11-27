@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Weather App",
     "description": "A simple Weather App",
     "image": "/src/assets/weather-app.jpg",
