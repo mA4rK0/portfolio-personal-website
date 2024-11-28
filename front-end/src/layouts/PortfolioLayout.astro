@@ -19,8 +19,8 @@ const websitesProjects: Project[] = websites;
 <section id="portfolio" class="bg-navyBlue min-h-[50.625rem] py-[4.02rem]">
   <section class="flex flex-col">
     <section class="flex flex-col items-center gap-y-3">
-      <h1 id="portfolio" class="text-lightBlue font-bold text-4xl">Portfolio</h1>
-      <p>here are my latest projects</p>
+      <h1 id="portfolio" class="text-lightBlue font-bold text-4xl" data-aos="fade-right" data-aos-duration="1000">Portfolio</h1>
+      <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">here are my latest projects</p>
     </section>
     <ProjectCarousel client:idle title="Websites" projects={websitesProjects} />
     <ProjectCarousel client:idle title="Mini Projects" projects={mProjects} />

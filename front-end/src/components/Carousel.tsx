@@ -1,4 +1,7 @@
 import { Img } from "react-image";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface Project {
   id: number;
@@ -15,10 +18,23 @@ interface ProjectCarouselProps {
 }
 
 const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
+  const [isAOSInitialized, setIsAOSInitialized] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+    setIsAOSInitialized(true);
+  }, []);
+
+  if (!isAOSInitialized) {
+    return null;
+  }
+
   return (
     <>
-      <h2 className="text-lightBlue text-2xl font-bold mx-auto my-11">{title}</h2>
-      <div className="carousel carousel-center rounded-box max-w-[81.5rem] mx-auto">
+      <h2 className="text-lightBlue text-2xl font-bold mx-auto my-11" data-aos="fade-up" data-aos-duration="1000">
+        {title}
+      </h2>
+      <div className="carousel carousel-center rounded-box max-w-[81.5rem] mx-auto" data-aos="flip-left" data-aos-offset="300" data-aos-duration="1000">
         {projects.map((project: Project) => (
           <div className="carousel-item mx-4" key={project.id}>
             <a href={project.url} target="_blank" rel="noopener noreferrer">
