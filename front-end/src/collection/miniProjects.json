@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Pomodoro App",
     "description": "A simple Pomodoro App",
-    "image": "/src/assets/weather-app.jpg",
+    "image": "/src/assets/pomodoro.jpg",
     "alt": "Pomodoro App",
     "url": "https://ma4rk0.github.io/portfolio-Pomodoro-Timer_v1/"
   }
