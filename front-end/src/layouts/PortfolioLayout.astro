@@ -1,0 +1,32 @@
+---
+import ProjectCarousel from "../components/Carousel";
+import miniProjects from "../collection/miniProjects.json";
+import websites from "../collection/websites.json";
+
+interface Project {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+  alt: string;
+  url: string;
+}
+
+const mProjects: Project[] = miniProjects;
+const websitesProjects: Project[] = websites;
+---
+
+<section id="portfolio" class="w-full min-h-[50.625rem] bg-navyBlue py-16">
+  <div class="flex flex-col">
+    <div class="flex flex-col items-center justify-center gap-y-3">
+      <h1 id="portfolio" class="text-4xl font-bold text-lightBlue" data-aos="fade-right" data-aos-duration="1000">Portfolio</h1>
+      <div class="text-center">
+        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">here are my latest projects</p>
+        <p class="flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">(⬅️ swipe to view ➡️)</p>
+      </div>
+    </div>
+
+    <ProjectCarousel client:only="react" title="Websites" projects={websitesProjects} />
+    <ProjectCarousel client:only="react" title="Mini Projects" projects={mProjects} />
+  </div>
+</section>

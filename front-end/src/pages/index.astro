@@ -1,9 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Test from "../components/Tes";
+import NavbarLayout from "../layouts/Navbar_Layout";
+import HomeLayout from "../layouts/HomeLayout.astro";
+import PortfolioLayout from "../layouts/PortfolioLayout.astro";
+import AboutLayout from "../layouts/AboutLayout.astro";
+import SkillLayout from "../layouts/SkillLayout.astro";
+import ContactLayout from "../layouts/ContactLayout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <Test client:only="react" />
+<Layout title="Juan Website">
+  <NavbarLayout client:only="react" />
+  <HomeLayout />
+  <PortfolioLayout />
+  <AboutLayout />
+  <SkillLayout />
+  <ContactLayout />
 </Layout>
