@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <nav>
-      <ul className="flex text-white xl:gap-[5.188rem]">
+      <ul className="flex text-white lg:gap-[5.188rem]">
         <li>
           <a href="#home" className="hover:text-lightBlue active:text-white font-semibold transition ease-in-out duration-300">
             Home

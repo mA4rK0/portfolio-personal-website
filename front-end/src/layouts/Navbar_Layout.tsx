@@ -41,7 +41,7 @@ export default function NavbarLayout() {
     <>
       <section>
         <header className={`flex items-center fixed top-0 w-full h-[3.688rem] z-20 transition ease-in-out duration-300 ${scrolled ? "bg-defaultBlack" : "bg-transparent"}`}>
-          <section className="flex items-center w-full justify-between px-4 xl:px-[7rem]">
+          <section className="flex items-center w-full justify-between px-4 lg:px-[7rem]">
             <p className="text-white font-bold">
               M<span className="text-lightBlue">rC</span>
             </p>

@@ -4,23 +4,23 @@ import { Image } from "astro:assets";
 import pp from "../assets/pp.png";
 ---
 
-<section id="about" class="bg-white w-full min-h-[50.625rem] py-[4.02rem]">
+<section id="about" class="bg-white w-full min-h-screen py-16">
   <section class="flex justify-center">
     <h1 class="font-bold text-4xl text-navyBlue" data-aos="fade-down" data-aos-duration="1000">About</h1>
   </section>
-  <section class="px-4 xl:px-[7.125rem]">
-    <section class="flex flex-wrap xl:justify-between pt-[4.02rem] items-center">
+  <section class="px-4 lg:px-[7.125rem]">
+    <section class="flex flex-wrap lg:justify-between py-[4.02rem] items-center">
       <section>
         <section class="flex flex-col">
-          <p class="text-lightBlue font-semibold xl:text-lg" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="200">
-            Hello Everyone 👋, my name is <span class="text-navyBlue block font-bold text-4xl my-1 xl:pb-3">Juan</span>
+          <p class="text-lightBlue font-semibold lg:text-lg" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="200">
+            Hello Everyone 👋, my name is <span class="text-navyBlue block font-bold text-4xl my-1 lg:pb-3">Juan</span>
           </p>
           <p class="text-lg text-gray-500 font-medium mb-5" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="200">Full Stack Web Developer</p>
-          <p class="xl:my-7 mb-5 block text-gray-500" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="200">I like to learn <span class="text-navyBlue font-bold">new technology</span></p>
+          <p class="lg:my-7 mb-5 block text-gray-500" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="200">I like to learn <span class="text-navyBlue font-bold">new technology</span></p>
           <ContactButton />
         </section>
       </section>
-      <section class="relative mt-7 xl:mt-0" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200">
+      <section class="relative mt-7 lg:mt-0" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200">
         <Image src={pp} alt="Developer Image" width={400} height={400} loading="lazy" class="relative z-10" />
         <span class="absolute bottom-0">
           <svg viewBox="0 0 200 200" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
@@ -32,15 +32,13 @@ import pp from "../assets/pp.png";
         </span>
       </section>
     </section>
-    <section class="flex justify-between w-full mt-32">
-      <section class="w-1/2" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-offset="200">
+    <section class="flex lg:justify-between w-full mt-7 lg:mt-32">
+      <section class="lg:w-1/2" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-offset="200">
         <p class="text-lightBlue font-semibold text-xl">About Me</p>
         <hr class="border-lightBlue my-2" />
         <p class="text-gray-500 font-medium">Hello, my name is Juan, I am from Indonesia, and I am now a full stack web developer, aiming to help create websites from the front-end and from the back-end for those who need it.</p>
       </section>
-      <section>
-        <p class="text-xl">coming soon</p>
-      </section>
+      <section></section>
     </section>
   </section>
 </section>
